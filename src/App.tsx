@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { bubbleSort } from './bubblesort';
 
 const Sorter = () => {
-    const [freq] = useState(50);
+    const [count] = useState(50);
 
     const randomValueInRange = (min: number, max: number) => {
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -18,7 +18,7 @@ const Sorter = () => {
     
     const resetArray = () => {
         const temp: number[] = [];
-        for (let i = 0; i < freq; i++) {
+        for (let i = 0; i < count; i++) {
             temp.push(randomValueInRange(5, 500));
         }
         setArr(temp);
