@@ -47,5 +47,6 @@ html, body {
     align-items: center;
     justify-content: center;
     padding: 2vh 2vw;
+    margin: 5px;
     background-color: black;
 }
